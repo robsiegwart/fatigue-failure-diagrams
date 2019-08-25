@@ -69,7 +69,7 @@
             </div>
 
             <div class="form-group form-inline">
-                <label for ="criteria_select" class="input_label">Critera method</label>
+                <label for ="criteria_select" class="input_label">Criterion:</label>
                 <select id="criteria_select" v-model="criteria" class="custom-select text_input">
                     <option>Modified Goodman</option>
                     <option>ASME Elliptic</option>
@@ -77,6 +77,8 @@
                     <option>Soderberg</option>
                 </select>
             </div>
+
+            <h2>Output</h2>
             
             <div class="criteria_description">
                 <p v-if="criteria === 'Modified Goodman'">The Modified Goodman criterion is defined as:</p>
